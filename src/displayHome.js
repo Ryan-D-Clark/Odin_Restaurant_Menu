@@ -1,7 +1,6 @@
 let htmlBody = document.getElementById("content")
 
 export function displayHome(){
-    console.log("Testing")
     let homeContainer = document.createElement("div")
     homeContainer.id = "display-home"
     homeContainer.classList.add("tab-content", "active-content")

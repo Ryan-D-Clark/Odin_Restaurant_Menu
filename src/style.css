@@ -5,17 +5,15 @@ html, body{
     margin: auto;
     padding: auto;
     height: 100%;
-    overflow: hidden;
 
 }
 
 #header{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     background-color: #1f2937;
     color: #ffffff;
-    font-size: 2.5vh;
+    font-size: 1rem;
 }
 
  .active-tab{
@@ -65,13 +63,70 @@ html, body{
     font-family: 'Aboreto';
     text-align: center;
     line-height: 100vh;
-    font-size: 8vh;
+    font-size: 8vw;
     color: #ffffff;
     background-color: rgba(0,0,0,0.6)
 }
 
 #display-menu{
-    background-color: blue;
+    padding: 2vh 0vh;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    height: 100%;
+}
+
+#pizza-menu{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    align-items: center;
+}
+
+#menu-title{
+    font-family: 'Aboreto';
+    color: #000000;
+    font-size: 5vw;
+}
+
+#pizza-list{
+    display: flex;
+    overflow-y:auto;
+    width: 80%;
+    flex-direction: column;
+    margin: 2vh auto;
+    display: flex;
+    border: solid 2px rgba(0,0,0,0.1);
+}
+
+.pizza{
+    cursor: pointer;
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    color: rgba(0,0,0,1);
+    border: solid 2px rgba(0,0,0,0.05);
+    grid-template-areas: "name name name price" "desc desc desc desc";
+}
+
+.pizza-name{
+    font-family: "Aboreto";
+    font-weight: bold;
+    grid-area: name;
+    padding: 5px;
+}
+
+.pizza-desc{
+    grid-area: desc;
+    padding: 5px;
+}
+
+.pizza-price{
+    font-weight: bold;
+    font-family: "Aboreto";
+    grid-area: price;
+    padding: 5px;
+    text-align: right;
 }
 
 #display-contact{
