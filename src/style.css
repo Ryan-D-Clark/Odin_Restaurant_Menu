@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Aboreto');
+
+html, body{
+    font-family:'Times New Roman', Times, serif;
+    margin: auto;
+    padding: auto;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+
+ .active-tab{
+    display: block;
+    background-color: #3882f6;
+    cursor: pointer;
+}
+
+.tab:hover{
+    transition: 0.8s;
+    background-color: #72a8ff;
+    cursor: pointer;
+}
+
+.tab{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#title{
+    font-family: 'Aboreto';
+    padding: 20px 20px;
+    flex-grow: 3;
+}
+
+#home{
+    flex-grow: 1;
+}
+
+#menu{
+    flex-grow: 1;
+}
+
+#contact{
+    flex-grow: 1;
+}
+
+#display-home{
+    background-color: red;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    
+}
+
+#home-title{
+    font-family: 'Aboreto';
+    text-align: center;
+    line-height: 100vh;
+    font-size: 8vh;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.6)
+}
+
+#display-menu{
+    background-color: blue;
+}
+
+#display-contact{
+
+    background-color: yellow;
+}
+
+.tab-content{
+    display: none;
+}
+
+.active-content{
+    display: block;
+}
