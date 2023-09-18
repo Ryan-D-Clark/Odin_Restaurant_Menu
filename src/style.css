@@ -130,8 +130,48 @@ html, body{
 }
 
 #display-contact{
+    padding: 2vh 0vh;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    height: 100vh;
+}
 
-    background-color: yellow;
+#form-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+#form-title{
+    font-family: "Aboreto";
+}
+
+#feedback-form{
+    border: rgba(0,0,0,0.1) solid 1px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+#feedback{
+    text-align: center;
+    width: 100%;
+}
+
+#submit-button{
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    background-color:#1f2937;
+    font-family: "Aboreto";
+    font-weight: bold;
+}
+
+#submit-button:hover{
+    background-color: #72a8ff;
 }
 
 .tab-content{
