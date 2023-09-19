@@ -59,7 +59,7 @@ html, body{
     background-color: red;
     height: 100vh;
     background-size: cover;
-    background-image: url(pizza.jpegg);
+    background-image: url(pizza.jpeg);
     
 }
 
@@ -74,7 +74,7 @@ html, body{
 
 #display-menu{
     padding: 2vh 0vh;
-    background-image: url(pizza.jpegg);
+    background-image: url(pizza.jpeg);
     height: 100%;
 }
 
@@ -135,7 +135,7 @@ html, body{
 
 #display-contact{
     padding: 2vh 0vh;
-    background-image: url(pizza.jpegg);
+    background-image: url(pizza.jpeg);
     height: 100vh;
 }
 
