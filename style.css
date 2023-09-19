@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Aboreto');
+
+html, body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1vw;
+    color: #000;
+    opacity: 1;
+    margin: auto;
+    padding: auto;
+    height: 100%;
+
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+ .active-tab{
+    display: block;
+    background-color: #3882f6;
+    cursor: pointer;
+}
+
+.tab:hover{
+    transition: 0.8s;
+    background-color: #72a8ff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tab{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#title{
+    font-family: 'Aboreto';
+    padding: 20px 20px;
+    flex-grow: 3;
+}
+
+#home{
+    flex-grow: 1;
+}
+
+#menu{
+    flex-grow: 1;
+}
+
+#contact{
+    flex-grow: 1;
+}
+
+#display-home{
+    background-color: red;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    
+}
+
+#home-title{
+    font-family: 'Aboreto';
+    text-align: center;
+    line-height: 100vh;
+    font-size: 8vw;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.6)
+}
+
+#display-menu{
+    padding: 2vh 0vh;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    height: 100%;
+}
+
+#pizza-menu{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    align-items: center;
+}
+
+#menu-title{
+    font-family: 'Aboreto';
+    color: #000000;
+    font-size: 5vw;
+}
+
+#pizza-list{
+    display: flex;
+    overflow-y:auto;
+    width: 80%;
+    flex-direction: column;
+    margin: 2vh auto;
+    display: flex;
+    border: solid 2px rgba(0,0,0,0.1);
+}
+
+.pizza{
+    cursor: pointer;
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    color: rgba(0,0,0,1);
+    border: solid 2px rgba(0,0,0,0.05);
+    grid-template-areas: "name name name price" "desc desc desc desc";
+}
+
+.pizza-name{
+    font-family: "Aboreto";
+    font-weight: bold;
+    grid-area: name;
+    padding: 5px;
+}
+
+.pizza-desc{
+    grid-area: desc;
+    padding: 5px;
+}
+
+.pizza-price{
+    font-weight: bold;
+    font-family: "Aboreto";
+    grid-area: price;
+    padding: 5px;
+    text-align: right;
+}
+
+#display-contact{
+    padding: 2vh 0vh;
+    background-image: url(/Odin_Restaurant_Menu/pizza.jpeg);
+    height: 100vh;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+#form-title{
+    font-family: "Aboreto";
+}
+
+#feedback-form{
+    border: rgba(0,0,0,0.1) solid 1px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+#feedback{
+    text-align: center;
+    width: 100%;
+}
+
+#submit-button{
+    cursor: pointer;
+    padding: 10px;
+    background-color:#1f2937;
+    font-family: "Aboreto";
+    font-weight: bold;
+}
+
+#submit-button:hover{
+    background-color: #72a8ff;
+}
+
+.tab-content{
+    display: none;
+}
+
+.active-content{
+    display: block;
+}
+
+input{
+    background-color: #ffffff;
+}
+
+textarea{
+    background-color: #ffffff;
+}
+
+::placeholder{
+    padding: 5px;
+    font-size: 1rem;
+    color: #000;
+    opacity: 1;
+}
