@@ -2,6 +2,9 @@
 
 html, body{
     font-family:'Times New Roman', Times, serif;
+    font-size: 1vw;
+    color: #000;
+    opacity: 1;
     margin: auto;
     padding: auto;
     height: 100%;
@@ -25,6 +28,7 @@ html, body{
 .tab:hover{
     transition: 0.8s;
     background-color: #72a8ff;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -163,7 +167,6 @@ html, body{
 
 #submit-button{
     cursor: pointer;
-    color: #ffffff;
     padding: 10px;
     background-color:#1f2937;
     font-family: "Aboreto";
@@ -180,4 +183,19 @@ html, body{
 
 .active-content{
     display: block;
+}
+
+input{
+    background-color: #ffffff;
+}
+
+textarea{
+    background-color: #ffffff;
+}
+
+::placeholder{
+    padding: 5px;
+    font-size: 1rem;
+    color: #000;
+    opacity: 1;
 }
